@@ -1,0 +1,11 @@
+package mx.com.dongalleto.app.service.impl;
+
+import mx.com.dongalleto.app.service.UserService;
+
+public class UserServiceImpl implements UserService {
+    @Override
+    public void saveUser(UserRequest userRequest) {
+        // TODO Auto-generated method stub
+    }
+    // Implement the methods defined in the UserService interface here
+}
