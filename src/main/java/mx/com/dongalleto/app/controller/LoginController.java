@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 @RequestMapping("/api")
 @CrossOrigin(origins = {"http://192.168.174.254:8080", "http://192.168.174.227:3000", "http://192.168.174.217:5500"})
-//192.168.10.223
 public class LoginController {
+
     @Autowired
     UserService userService;
     
