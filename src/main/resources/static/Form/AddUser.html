@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register User</title>
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container-fluid">
+    <header class="d-flex justify-content-center align-items-center">
+        <h1>
+            Add User
+        </h1>
+    </header>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form id="userForm">
+                <div class="form-group m-2">
+                    <label for="username">Username:</label>
+                    <input type="email" class="form-control" id="username" name="username">
+                </div>
+                <div class="form-group m-2">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                </div>
+                <div class="form-group m-2">
+                    <label for="role">Role:</label>
+                    <select class="form-control" id="role" name="role">
+                        <option value="admin">Admin</option>
+                        <option value="user">User</option>
+                    </select>
+                </div>
+            </form>
+            <div class="d-flex justify-content-center align-items-center">
+                <button type="submit" class="btn btn-primary m-5 " onclick="saveUser()">Submit</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="AddUser.js"></script>
+<script src="../Bootstrap/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
