@@ -41,6 +41,7 @@ public class LoginController {
            us.setUsername(usr.getUsername());
            us.setRol(u.getRole());
            logsService.log(us);
+           emailService.sendEmail(usr.getUsername(),"Don Galleto","Just logged in!");
 
             return ResponseEntity.ok(u);
         } catch (Exception e) {
