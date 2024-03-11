@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import mx.com.dongalleto.app.Model.User;
 
-import org.springframework.data.jpa.repository.JpaRepository;;import static net.sf.jsqlparser.util.validation.metadata.NamedObject.user;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>{
